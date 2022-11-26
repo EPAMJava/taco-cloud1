@@ -7,16 +7,14 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.ResultMatcher;
-import tacos.controllers.HomeController;
 
-import static java.lang.reflect.Array.get;
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
 @SpringBootTest
-@WebMvcTest(HomeController.class)
+@WebMvcTest(TacoCloudApplication.class)
 class TacoCloudApplicationTests {
 
     @Autowired
